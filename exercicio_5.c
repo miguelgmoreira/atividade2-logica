@@ -1,20 +1,22 @@
 #include<stdio.h>
 int main(){
 
-int num1, num2, num3;
+float custo, valorfrete ,despesas , valorvenda, valorbruto, lucro, porcetangemlucro;
 
-printf("Digite o valor do produto : ");
-scanf("%d", &num1);
+printf("\n Digite o valor de custo da mercadoria:");
+scanf("%f", &custo);
+printf("\n Digite o valor de frete da mercadoria:");
+scanf("%f", &valorfrete);
+printf("\n Digite o valor das despesas:");
+scanf("%f", &despesas);
+printf(" Digite o valor da venda:");
+scanf("%f", &valorvenda);
 
-printf("Digite o valor do frete desse produto : ");
-scanf("%d", &num2);
+valorbruto = custo +valorfrete +despesas;
 
-num3 = num1 + num2;
+porcetangemlucro= (lucro/valorbruto) * 100;
+ printf("a porcetangem de lucro e : %.2f%%" , lucro);
 
-printf("O valor da venda foi : %d", num3 );
-
-
-printf("\n \n o valor de lucro foi :  %d", num3 );
 
 
 
